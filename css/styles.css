@@ -142,8 +142,12 @@ var(--blue-color); */
      color: var(--title-color);
  }
 
-.icon-menu-hamburger {
-    display: none;
+.menu-hamburger {
+    /* display: flex; */
+    display: block;
+    border: none;
+    background-color: transparent;
+    margin-left: auto;
 }
 
  /* ------------------------------------------------------------- */
