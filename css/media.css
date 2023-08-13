@@ -11,21 +11,276 @@
  }
    
  }
+ /* -------------------------------768------------------------------------------------- */
  @media screen and (min-width: 768px) {
      .container {
          max-width: 768px;
      }
+          .header-logo {
+            margin-top: 25.5px;
+            margin-bottom: 25.5px;
+            margin-left: 16px;
+            margin-right: 120px;
+          }
+
+         .header-menu {
+             display: flex;
+             gap: 40px;
+    
+         }
+    
+         .header-menu-item {
+             /* margin-right: 40px; */
+    
+         }
+    
+    
+    
+    
+         .header-menu-link {
+             font-weight: 500;
+             font-size: 16px;
+             line-height: 1.50;
+             letter-spacing: 0.02em;
+             /* color: var(--navyblue88-color); */
+             padding: 24px 0;
+             display: block;
+             position: relative;
+             /* color: #404bbf; */
+             transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+         }
+    
+         /* 
+      .header-menu-link.active {
+         content: '';
+         width: 100%;
+         position: absolute; 
+          left: 0;
+         bottom: -1px;
+         height: 4px;
+         background-color: #404bbf;
+         border-radius: 2px;
+         border-bottom: 4px solid #404bbf; 
+     }   */
+    
+         .header-menu-link::after {
+             content: '';
+             /* width: 100%; */
+             position: absolute;
+             left: 0;
+             bottom: -1px;
+             height: 4px;
+             background-color: #404bbf;
+             color: #404bbf;
+             /* color: #404bbf; */
+             border-radius: 2px;
+         }
+    
+         .current::after {
+             content: '';
+             width: 100%;
+             position: absolute;
+             left: 0;
+             bottom: -1px;
+             height: 4px;
+             background-color: #404bbf;
+             border-radius: 2px;
+         }
+                 .menu-hamburger {
+                    display: none;
+                 }
+
+                .header-address {
+                    display: flex;
+                    flex-direction: column;
+                    font-style: normal;
+             /* margin-left: auto;  */
+                }
+        
+                .header-address-list {
+                    display: flex;
+                    gap: 12px;
+                    flex-wrap: wrap;
+                    padding-left: 81px;
+                    padding-top: 16px;
+                    padding-bottom: 16px;
+        
+        
+                }
+        
+                .header-address-item {
+                   
+                    /* margin: 40px 40px 40px 40px; */
+                    /* padding: 24px 32px 24px 34px;
+            gap: 40px; */
+                }
          .hero {
             background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-p.jpg);
+            padding: 112px 0;
+        }
+                .hero-title {
+                    font-size: 56px;
+                    max-width:496px;
+                    margin-bottom: 36px;
+                    padding-left: 0;
+                    padding-right: 0;
+                  
+                   
+                }
+ 
+  .softskills-list {
+
+      gap: 72px 24px;
+      flex-wrap: wrap;
+  }
+   .softskills-item {
+     
+        flex-basis: calc((100% - 24px) / 2); 
+   }
+   /* .container-team {
+    padding:64px 0;
+   } */
+   .team-list {
+    gap:64px 24px;
+   }
+
+   
+
+ .team-item {
+  width: calc((100% - 24px) / 2);
+    /* display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0; */
  }
 
+.list-costumers {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 72px 24px;
+}
+
+ .list-costumers-item {
+        width: 100%;
+        max-width: 168px;
+        height: 88px;
+     width: calc((100% - 24px) / 2);
+ }
+
+
+ .footer {
+     /* max-width: 768px; */
+     background: var(--title-color);
+     padding: 97.5px 0 96px;
+     color: #2e2f42;
+     /* margin-bottom: 72px; */
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ }
+ /* -----------------------------1158------------------------------------------------- */
  @media screen and (min-width: 1158px) {
      .container {
          max-width: 1158px;
          padding-left: 15px;
          padding-right: 15px;
      }
+                .header-menu {
+                    display: flex;
+                    gap: 40px;
+        
+                }
+        
+                .header-menu-item {
+                    /* margin-right: 40px; */
+        
+                }
+        
+            
+        
+        
+                .header-menu-link {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 1.50;
+                    letter-spacing: 0.02em;
+                    /* color: var(--navyblue88-color); */
+                    padding: 24px 0;
+                    display: block;
+                    position: relative;
+                    /* color: #404bbf; */
+                    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                }
+        
+                /* 
+          .header-menu-link.active {
+             content: '';
+             width: 100%;
+             position: absolute; 
+              left: 0;
+             bottom: -1px;
+             height: 4px;
+             background-color: #404bbf;
+             border-radius: 2px;
+             border-bottom: 4px solid #404bbf; 
+         }   */
+        
+                .header-menu-link::after {
+                    content: '';
+                    /* width: 100%; */
+                    position: absolute;
+                    left: 0;
+                    bottom: -1px;
+                    height: 4px;
+                    background-color: #404bbf;
+                    color: #404bbf;
+                    /* color: #404bbf; */
+                    border-radius: 2px;
+                }
+        
+                .current::after {
+                    content: '';
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    bottom: -1px;
+                    height: 4px;
+                    background-color: #404bbf;
+                    border-radius: 2px;
+                }
+                                .header-address {
+                                    display: flex;
+                                    /* font-style: normal;
+                     margin-left: auto; */
+                                }
+                
+                                .header-address-list {
+                                    display: flex;
+                                    gap: 40px;
+                
+                
+                                }
+                
+                                .header-address-item {
+                                    /* margin: 40px 40px 40px 40px; */
+                                    /* padding: 24px 32px 24px 34px;
+                    gap: 40px; */
          .hero {
              background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
          }
  }
+}
