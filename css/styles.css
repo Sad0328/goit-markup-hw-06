@@ -724,7 +724,7 @@ var(--blue-color); */
  .footer-mail {}
 
  .footer-input {
-     width: 264px;
+     max-width: 264px;
      height: 40px;
      border: 1px solid #ffffff;
      background-color: transparent;
