@@ -176,7 +176,159 @@ var(--blue-color); */
      align-items: baseline;
  } */
 
+.mob-menu {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 20;
+    background: var(--hero-color);
+    /* padding: 24px 24px 40px 40px; */
+    /* display: flex; */
+        flex-direction: column;
+        justify-content: space-between;
+        /* overflow: auto; */
+       
 
+}
+
+.mob-menu-btn {
+display: flex;
+    margin-left: auto;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--accent-color);
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 32px; */
+    margin-right: 24px;
+    margin-top: 24px;
+}
+
+.icon-x {}
+
+
+
+.mob-menu-item {
+   
+}
+
+.mob-menu-item {
+    margin-bottom: 40px;
+}
+
+.mob-menu-link {
+    font-family: Roboto;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11;
+        letter-spacing: 0.72px;
+        text-transform: capitalize;
+        color: var(--title-color);
+}
+
+.mob-menu-list {
+    padding: 80px 40px 284px 40px;
+}
+/* .mob-menu-adress {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 80px 40px 284px 40px;
+} */
+.mob-menu-list {
+    gap: 40px;
+}
+
+.mob-menu-link {
+
+}
+
+.mob-menu-tel {
+    padding-left:40px;
+    padding-bottom: 40px;
+    
+
+}
+.mob-link-tel {
+font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    /* 111.111% */
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    color: var(--blue-color);
+}
+.mob-menu-mail {
+    padding-left: 40px;
+        padding-bottom: 48px;
+
+}
+.mob-link-mail {
+    font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        /* 120% */
+        letter-spacing: 0.4px;
+        color: var(--title-color);
+}
+
+.mob-list-social {
+    display: flex;
+        gap: 56px;
+        justify-content: center;
+        align-items: center;
+}
+
+
+
+.mob-social-connect {
+        width: 40px;
+            height: 40px;
+    
+}
+
+.mob-item {
+     width: 100%;
+        height: 100%;
+        background-color: #4d5ae5;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+
+ .list-social {
+     display: flex;
+     gap: 56px;
+     justify-content: center;
+     align-items: center;
+
+
+ }
+
+ .social-connect {
+     width: 40px;
+     height: 40px;
+    padding-left: 40px;
+        padding-bottom: 48px;
+
+
+
+ }
+
+
+ 
+
+ /* --------------------------------------header---------------------------- */
  /* добавить в планшет и демктоп
 -------------------------------------------------------------------------------- */
  .header-address {

@@ -217,6 +217,7 @@
      .footer-form {
          display: flex;
          gap: 24px;
+        flex-direction: row;
      }
 
      .footer-subscribe {
@@ -381,7 +382,10 @@
 
 
      }
-
+         .footer-form {
+        /* flex-direction: row;
+        align-items: center; */
+         }
 
 
  }
