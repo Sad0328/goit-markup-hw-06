@@ -176,6 +176,24 @@ var(--blue-color); */
      align-items: baseline;
  } */
 
+
+
+.menu-open-btn {
+    background-color: transparent;
+        border: none;
+        display: flex;
+        justify-content: center;
+}
+
+.menu-close-btn {
+        display: block;
+            margin-left: auto;
+            background-color: transparent;
+            border: none;
+            margin-bottom: 32px;
+}
+
+
 .mob-menu {
     position: fixed;
     top: 0;
@@ -187,10 +205,11 @@ var(--blue-color); */
     /* display: flex; */
         flex-direction: column;
         justify-content: space-between;
-        /* overflow: auto; */
+         overflow: auto; 
        
 
 }
+
 
 .mob-menu-btn {
 display: flex;
@@ -265,7 +284,7 @@ font-family: Roboto;
 }
 .mob-menu-mail {
     padding-left: 40px;
-        padding-bottom: 48px;
+        padding-bottom: 48px;  
 
 }
 .mob-link-mail {
