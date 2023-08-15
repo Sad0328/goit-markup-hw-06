@@ -1,5 +1,6 @@
  @media screen and (min-width: 428px) {
      .container {
+        width: 100%;
          max-width: 428px;
          /* padding-left: 16px;
      padding-right: 16px;
@@ -10,13 +11,13 @@
      .footer-input {
          width: 398px;
      }
-
+    
  }
 
  /* -------------------------------768------------------------------------------------- */
  @media screen and (min-width: 768px) {
      .container {
-         max-width: 768px;
+         max-width: 584px;
      }
 
      .header-logo {
@@ -105,11 +106,17 @@
          display: flex;
          gap: 12px;
          flex-wrap: wrap;
-         padding-left: 81px;
-         padding-top: 16px;
-         padding-bottom: 16px;
+         /* padding-left: 81px; */
+         /* padding-top: 16px;
+         padding-bottom: 16px; */
+         margin-left: auto;
 
 
+     }
+
+     .header-address-link {
+         font-size: 12px;
+         font-weight: 400;
      }
 
      .header-address-item {
@@ -121,7 +128,7 @@
 
      .hero {
          background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-p.jpg);
-         padding: 112px 0;
+         padding: 188px 0;
      }
 
      .hero-title {
@@ -135,9 +142,10 @@
      }
 
      .softskills-list {
-
+         /* display: flex; */
          gap: 72px 24px;
-         /* flex-wrap: wrap; */
+
+         flex-wrap: wrap;
      }
 
      .softskills-item {
@@ -148,6 +156,10 @@
          gap: 8px;
      }
 
+     .softskills-subtitle {
+         text-align: left;
+     }
+
      /* .container-team {
     padding:64px 0;
    } */
@@ -155,12 +167,12 @@
          gap: 64px 24px;
      }
 
-
+     .container-team {}
 
      .team-item {
          width: calc((100% - 24px) / 2);
-         /* display: flex;
-    flex-wrap: wrap;
+         /* display: flex; */
+         /* flex-wrap: wrap;
     width: 100%;
     margin: 0; */
      }
@@ -169,6 +181,8 @@
          flex-wrap: wrap;
          display: flex;
          gap: 72px 24px;
+         margin-top: 0;
+         margin-bottom: 0;
      }
 
      .list-costumers-item {
@@ -194,10 +208,14 @@
          align-items: baseline;
      }
 
+     .container-footer {
+         /* width: 584px; */
+     }
+
      /* WEB */
      .container-logo {
-         padding-right: 24px;
-         margin-left: 108px;
+         /* padding-right: 24px;
+         margin-left: 108px; */
      }
 
      /* social */
@@ -209,25 +227,30 @@
 
      /* subscrible */
      .container-footer-main {
-         margin-left: 108px;
+         /* margin-left: 108px; */
 
 
+     }
+
+     .container-footer {
+         width: 584px;
      }
 
      .footer-form {
          display: flex;
-         gap: 24px;
-        flex-direction: row;
+         flex-direction: row;
      }
 
      .footer-subscribe {
-         margin-left: -180px;
+         /* margin-left: -180px; */
+         justify-content: start;
+
      }
 
      .footer-input {}
 
      .footer-button-subscribe {
-         flex-wrap: wrap;
+         /* flex-wrap: wrap; */
          /* flex-direction: none;
         align-items: right; */
 
@@ -240,7 +263,9 @@
      }
 
 
-
+     .footer-input {
+         width: 398px;
+     }
 
 
 
@@ -365,7 +390,8 @@
      }
 
      .softskills-list {
-        
+
+
          /* display: inline;
          margin-bottom: 120px;
          margin-top: 120px; */
@@ -382,10 +408,98 @@
 
 
      }
-         .footer-form {
-        /* flex-direction: row;
+
+     .team {
+         padding-top: 120px;
+         padding-bottom: 120px;
+     }
+
+     .team-list {
+         gap: 24px;
+         display: flex;
+
+     }
+
+     .team-item {
+         width: calc((100% - 72px) / 4);
+     }
+
+     .projects {
+         padding-bottom: 120px;
+
+     }
+
+     .projects-title {
+         font-weight: 700;
+         font-size: 36px;
+         line-height: 1.11;
+         letter-spacing: 0.02em;
+         color: var(--title-color);
+         text-align: center;
+         text-transform: capitalize;
+         /* display: flex; */
+         margin-bottom: 72px;
+
+         text-align: center;
+     }
+
+     .projects-list {
+         display: flex;
+         gap: 24px;
+     }
+
+     .projects-item {
+         /* margin-bottom: 48px; */
+         width: calc((100% - 48px) / 3);
+         height: auto;
+
+     }
+
+     .project-subtitle {
+         font-weight: 500;
+         font-size: 20px;
+         line-height: 1.20;
+         letter-spacing: 0.02em;
+         color: #2E2F42;
+         margin-bottom: 8px;
+     }
+
+     .project-item-text {
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 24px;
+         letter-spacing: 0.02em;
+         color: #434455;
+         background: #FFFFFF;
+     }
+
+     .footer-form {
+         /* flex-direction: row;
         align-items: center; */
-         }
+     }
 
+     .footer {
+         /* max-width: 1158px; */
+         /* flex-wrap: wrap; */
+     }
 
+     .container-footer {
+         width: 1158px;
+         padding-left: 15px;
+         /* flex-wrap: wrap; */
+         flex-direction: row;
+         align-items: baseline;
+         gap: unset;
+         margin: 0 auto;
+         /* gap: 120px; */
+     }
+     .container-logo {
+        margin-right:120px;
+     }
+     .list-footer {
+        margin-right: 80px;
+     }
+                  .footer-input {
+                       max-width: 264px; 
+                  }
  }
