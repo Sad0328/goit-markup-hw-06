@@ -1,3 +1,9 @@
+@media (min-width: 320px) and (max-width: 428px) {
+    .modal-open {
+        width: 290px;
+    }
+}
+ 
  @media screen and (min-width: 428px) {
      .container {
         width: 100%;
@@ -7,23 +13,40 @@
      margin-left: auto;
      margin-right: auto; */
      }
+     .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url(../images/people-office-m2x.jpg);
+     }
 
      .footer-input {
          width: 398px;
      }
     
  }
+ .modal {
+    width: 392px;
+    width: calc(100% - 30px)
+ }
 
  /* -------------------------------768------------------------------------------------- */
+
+
+ 
  @media screen and (min-width: 768px) {
      .container {
-         max-width: 584px;
+         max-width: 768px;
      }
 
+         .modal {
+             width: 408px;
+        
+    
+         }
+
      .header-logo {
-         margin-top: 25.5px;
+         /* margin-top: 25.5px;
          margin-bottom: 25.5px;
-         margin-left: 16px;
+         margin-left: 16px; */
          margin-right: 120px;
      }
 
@@ -99,13 +122,13 @@
          display: flex;
          flex-direction: column;
          font-style: normal;
-         /* margin-left: auto;  */
+         margin-left: auto;  
      }
 
      .header-address-list {
          display: flex;
          gap: 12px;
-         flex-wrap: wrap;
+         flex-direction: column;
          /* padding-left: 81px; */
          /* padding-top: 16px;
          padding-bottom: 16px; */
@@ -128,7 +151,8 @@
 
      .hero {
          background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-p.jpg);
-         padding: 188px 0;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-p2x.jpg);
+         padding-top: 112px;
      }
 
      .hero-title {
@@ -140,6 +164,7 @@
 
 
      }
+
 
      .softskills-list {
          /* display: flex; */
@@ -163,6 +188,10 @@
      /* .container-team {
     padding:64px 0;
    } */
+
+   .container-team-main {
+    width: 564px;
+   }
      .team-list {
          gap: 64px 24px;
      }
@@ -209,7 +238,7 @@
      }
 
      .container-footer {
-         /* width: 584px; */
+          width: 584px; 
      }
 
      /* WEB */
@@ -220,8 +249,8 @@
 
      /* social */
      .footer-list-social {
-         max-width: 208px;
-         margin: auto 0;
+         /* max-width: 208px;
+         margin: auto 0; */
          /* padding-right: 168px; */
      }
 
@@ -234,6 +263,8 @@
 
      .container-footer {
          width: 584px;
+         /* padding-left: 15px;
+         padding-right: 15px; */
      }
 
      .footer-form {
@@ -247,7 +278,9 @@
 
      }
 
-     .footer-input {}
+     .footer-input {
+        width: 264px;
+     }
 
      .footer-button-subscribe {
          /* flex-wrap: wrap; */
@@ -263,9 +296,7 @@
      }
 
 
-     .footer-input {
-         width: 398px;
-     }
+   
 
 
 
@@ -359,7 +390,8 @@
      .header-address-list {
          display: flex;
          gap: 40px;
-         padding-left: 260px;
+         /* padding-left: 260px; */
+         margin-left: auto;
          flex-direction: row;
 
 
@@ -375,6 +407,7 @@
 
      .hero {
          background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-d2x.jpg);
      }
 
      .icons-softskills {
@@ -390,13 +423,19 @@
      }
 
      .softskills-list {
-
+        padding-top: 120px;
+        padding-bottom: 120px;
 
          /* display: inline;
          margin-bottom: 120px;
          margin-top: 120px; */
 
 
+     }
+     .softskills-subtitle {
+        font-size: 20px;
+           
+            font-weight: 500;
      }
 
      .softskills-item {
@@ -419,6 +458,9 @@
          display: flex;
 
      }
+         .container-team-main {
+             width: 1158px;
+         }
 
      .team-item {
          width: calc((100% - 72px) / 4);
@@ -437,7 +479,7 @@
          color: var(--title-color);
          text-align: center;
          text-transform: capitalize;
-         /* display: flex; */
+         display: block;
          margin-bottom: 72px;
 
          text-align: center;
@@ -499,7 +541,7 @@
      .list-footer {
         margin-right: 80px;
      }
-                  .footer-input {
-                       max-width: 264px; 
+    .footer-input {
+    max-width: 264px; 
                   }
  }

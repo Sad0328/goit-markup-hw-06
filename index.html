@@ -43,39 +43,43 @@
                             (000) 111-11-11</a></li>
                 </ul>
             </address>
+            <!-- ---------------------------buton-------------------------- -->
             <button type="button" class="menu-hamburger" class="menu-open-btn" data-menu-open>
                 <svg class="icon-menu-hamburger" width="32" height="22">
                     <use href="./images/icons.svg#icon-menu-hamburger"></use>
                 </svg>
             </button>
         </div>
-        <div class="mob-menu is-hidden" data-menu>
-            <div>
-            <button type="button" class="mob-menu-btn" class="menu-close-btn" data-menu-close>
-                <svg class="icon-x" width="8" height="8">
-                    <use href="./images/icons.svg#icon-x"></use>
-                </svg>
-                </button>
-                <ul class="mob-menu-list list">
-                    <li class="mob-menu-item">
-                        <a class="mob-menu-link" href="./index.html">Studio</a>
-                    </li>
-                    <li class="mob-menu-item">
-                        <a class="mob-menu-link" href="./portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="mob-menu-item">
-                        <a class="mob-menu-link" href="">Contacts</a>
-                    </li>
-                </ul>
-            </div>
+       
+            <!-- --------------------menu---------------------------------------------------- -->
+            <div class="mob-menu is-hidden" data-menu>
                 <div>
-                    <ul class="mob-menu-address list">
-                    
-                        <li class="mob-menu-tel"><a class="mob-link-tel link" href="tel:+110001111111">+11
-                                (000) 111-11-11</a></li>
-                        <li class="mob-menu-mail"><a class="mob-link-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    
+                    <button type="button" class="mob-menu-btn" class="menu-close-btn" data-menu-close>
+                        <svg class="icon-x" width="8" height="8">
+                            <use href="./images/icons.svg#icon-x"></use>
+                        </svg>
+                    </button>
+                    <ul class="mob-menu-list list">
+                        <li class="mob-menu-item">
+                            <a class="mob-menu-link mob-menu-first" href="./index.html">Studio</a>
+                        </li>
+                        <li class="mob-menu-item">
+                            <a class="mob-menu-link mob-color" href="./portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="mob-menu-item">
+                            <a class="mob-menu-link mob-color" href="">Contacts</a>
+                        </li>
                     </ul>
+                </div>
+                <div class="mob-contacts">
+                    <address class="mod-address">
+                    <ul class="mob-menu-address list">
+                        <li class="mob-menu-info"><a class="mob-link-tel link" href="tel:+110001111111">+11
+                                (000) 111-11-11</a></li>
+                        <li class="mob-menu-info"><a class="mob-link-mail link"
+                                href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                                </ul>
+                    </address>
                     <ul class="mob-list-social list">
                         <li class="mob-social-connect">
                             <a class="mob-item" href="./insta.com">
@@ -107,18 +111,33 @@
                         </li>
                     </ul>
                 </div>
-                
+            
+            
+            </div> 
+               
+                <!--------------------------- end menu----------------------------------------- -->
            
         </div>
     </header>
     <main>
         <section id="home" class="hero">
             <div class="container">
+                <picture>
+                   <source srcset=".images/people-office.jpg 1x, .images/people-office-d2x.jpg 2x" media="(min-width:1158px)"/> 
+                </picture>
+                <picture>
+                    <source srcset=".images/people-office-p.jpg 1x, .images/people-office-p2x.jpg 2x" media="(min-width:768px)"/>
+                </picture>
+                <picture>
+                    <source srcset=".images/people-office-m.jpg 1x, .images/people-office-m2x.jpg 2x" media="(min-width:428px)"/>
+                    <!-- <img class="hero-picture" src=".images/people-office.jpg" alt="people-office" width="1440"/> -->
+                </picture>
+
                 <h1 class="hero-title">Effective Solutions for Your Business</h1>
                 <button class="hero-btn" type="button" data-modal-open>Order Service</button>
             </div>
         </section>
-
+<!-- --------------------------------softskils---------------------------------------------------------- -->
 
         <section class="softskills">
             <div class="container">
@@ -193,11 +212,13 @@
         </section>
  
          <section class="team">
-            <div class="container">
+            <div class="container container-team-main">
                 <h2 class="team-title">Our Team</h2>
                 <ul class="team-list list">
                     <li class="team-item">
-                        <img src="./images/mark.jpg" alt="photo Mark" width="264" height="260" />
+                        <img 
+                        srcset="./images/mark.jpg 1x, ./images/mark-2xm.jpg 2"
+                        src="./images/mark.jpg" alt="photo Mark" width="264" height="260" />
                         <div class="container-team">
                             <h3 class="team-subtitle">Mark Guerrero</h3>
                             <p class="team-text">Product Designer</p>
@@ -235,7 +256,9 @@
 
                     </li>
                     <li class="team-item">
-                        <img src="./images/tom.jpg" alt="photo Tom" width="264" height="260" />
+                        <img
+                        srcset="./images/tom.jpg 1x, ./images/tom-2xm.jpg 2x"
+                         src="./images/tom.jpg" alt="photo Tom" width="264" height="260" />
                         <div class="container-team">
                             <h3 class="team-subtitle">Tom Ford</h3>
                             <p class="team-text">Frontend Developer</p>
@@ -273,7 +296,9 @@
                         </div>
                     </li>
                     <li class="team-item">
-                        <img src="./images/camila.jpg" alt="photo Camila" width="264" height="260" />
+                        <img 
+                        srcset="./images/camila.jpg 1x, ./images/camila-2xm.jpg 2x"
+                        src="./images/camila.jpg" alt="photo Camila" width="264" height="260" />
                         <div class="container-team">
                             <h3 class="team-subtitle">Camila Garcia</h3>
                             <p class="team-text">Marketing</p>
@@ -310,7 +335,9 @@
                         </div>
                     </li>
                     <li class="team-item">
-                        <img src="./images/daniel.jpg" alt="photo Daniel" width="264" height="260" />
+                        <img 
+                        srcset="./images/daniel.jpg 1x, ./images/daniel-2x.jpg"
+                        src="./images/daniel.jpg" alt="photo Daniel" width="264" height="260" />
                         <div class="container-team">
                             <h3 class="team-subtitle">Daniel Wilson</h3>
                             <p class="team-text">UI Designer</p>
@@ -557,7 +584,7 @@
 
 
 
-
+<!-- 
 <div class="mob-menu is-hidden" data-menu>
     <div>
         <button type="button" class="mob-menu-btn" class="menu-close-btn" data-menu-close>
@@ -621,4 +648,4 @@
     </div>
 
 
-</div>
+</div> -->
