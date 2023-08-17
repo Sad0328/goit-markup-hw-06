@@ -260,6 +260,19 @@
 
 
      }
+          .footer-social {
+              justify-content: start;
+              text-align: left;
+    
+          }
+                  .container-logo {
+                    text-align: left;
+                  }
+    
+          .footer-logo {
+              justify-content: start;
+              text-align: left;
+          }
 
      .container-footer {
          width: 584px;
@@ -406,6 +419,8 @@
      }
 
      .hero {
+        padding-top: 188px;
+        padding-bottom: 188px;
          background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-d2x.jpg);
      }
@@ -421,10 +436,13 @@
          /* margin-bottom: 8px; */
 
      }
-
+     .softskills {
+         padding-top: 120px;
+        padding-bottom: 120px; 
+     }
      .softskills-list {
-        padding-top: 120px;
-        padding-bottom: 120px;
+        /* padding-top: 120px;
+        padding-bottom: 120px; */
 
          /* display: inline;
          margin-bottom: 120px;
@@ -524,6 +542,16 @@
          /* max-width: 1158px; */
          /* flex-wrap: wrap; */
      }
+     .footer-social {
+        justify-content: start;
+        text-align: left;
+
+     }
+     .footer-logo {
+        justify-content: start;
+        text-align: left;
+     }
+    
 
      .container-footer {
          width: 1158px;
@@ -544,4 +572,7 @@
     .footer-input {
     max-width: 264px; 
                   }
+                                  .header-address-link {
+                                      font-size: 16px;
+                                  }
  }
