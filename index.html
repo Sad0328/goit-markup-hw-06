@@ -52,7 +52,7 @@
         </div>
        
             <!-- --------------------menu---------------------------------------------------- -->
-            <div class="mob-menu" data-menu>
+            <div class="mob-menu is-hidden" data-menu>
                 <div>
                     <button type="button" class="mob-menu-btn" class="menu-close-btn" data-menu-close>
                         <svg class="icon-x" width="8" height="8">
@@ -197,7 +197,7 @@
         <section class="projects">
             <div class="container">
                 <h2 class="projects-title">What are we doing</h2>
-                <picture>
+                <!-- <picture>
                     <source srcset=".images/monitor.jpg 1x, .images/monitor-2x.jpg 2x" media="(min-width:1158px)" />
                 </picture>
                 <picture>
@@ -205,17 +205,19 @@
                 </picture>
                 <picture>
                     <source srcset=".images/phone.jpg 1x, .images/phone-2x.jpg 2x" media="(min-width:1158px)" />
-                </picture>
+                    <img class="projects-picture" src=".images/monitor.jpg" alt="monitor" width="1158"/> 
+              
+                </picture> -->
                 <ul class="projects-list list">
                     <li class="projects-item list">
-                        <img src="./images/monitor.jpg" alt="monitor" width="360" height="300" />
+                        <img srcset="./images/monitor.jpg 1x, ./images/monitor-2x.jpg 2x" class="projects-picture"  src="./images/monitor.jpg" alt="monitor" width="360" height="300" />
                     </li>
                     <li class="projects-item list">
-                        <img src="./images/phones.jpg" alt="phones and background" width="360" height="300" />
+                        <img class="projects-picture" srcset="./images/phones.jpg 1x, ./images/phones-2x.jpg 2x" src="./images/phones.jpg" alt="phones and background" width="360" height="300" />
                     </li>
                     <li class="projects-item list">
-                        <img src="./images/phone.jpg" alt="phone" width="360" height="300" />
-                    </li>
+                        <img class="projects-picture" srcset="./images/phone.jpg 1x, ./images/phone-2x.jpg 2x" src="./images/phone.jpg" alt="phone" width="360" height="300" />
+                    </li> 
                 </ul>
             </div>
         </section>

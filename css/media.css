@@ -2,6 +2,19 @@
     .modal-open {
         width: 290px;
     }
+        /* .mob-menu-link {
+            font-family: "Roboto", sans-serif;
+            font-size: 25px;
+            font-weight: 700;
+           
+} */
+
+.mob-list-social {
+    gap: 16px;
+}
+.mob-link-tel {
+    font-size: 24px;
+}
 }
  
  @media screen and (min-width: 428px) {
